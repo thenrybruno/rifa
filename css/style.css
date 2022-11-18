@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Helvetica;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .8rem;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin: 1.5rem;
+}
+
+#inputs div input{
+    width: 15rem;
+}
+
+#inputs button{
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: .7rem;
+    border: solid 1px transparent;
+    background-color: #232323;
+    color: #ddd;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#inputs button:hover{
+    background-color: #ddd;
+    color: #232323;
+}
+
+h2{
+    margin-left: 1.5rem;
+}
+
+#numbers{
+    background-color: #232323;
+    display: grid;
+    grid-template-columns: 5rem 5rem 5rem 5rem 5rem;
+    grid-template-rows: 5rem 5rem 5rem 5rem 5rem;
+    max-width: 28rem;
+    max-height: 23rem;
+    gap: .5rem;
+    margin: 1.5rem;
+    padding-top: .8rem;
+    padding-left: .5rem;
+}
+
+
+#numbers span{
+    background-color: #ddd;
+    font-size: 3.5rem;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+#numbers span.marked{
+    background-color: #25a340;
+    color: #ddd;
+}
+
+#insert{
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+
+#text{
+    margin-left: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.btn{
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: .7rem;
+    border: solid 1px transparent;
+    background-color: #232323;
+    color: #ddd;
+    transition: .2s;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.btn:hover{
+    background-color: #ddd;
+    color: #232323;
+}

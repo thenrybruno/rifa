@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa Online</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rifa Online</h1>
+    </header>
+    <hr>
+    <main>
+        <section id="inputs">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Informe seu nome">
+            </div>
+            <div>
+                <label for="number">Número:</label>
+                <input type="number" name="number" id="number" placeholder="Informe o número desejado">
+            </div>
+            <button id="btn-escolher">Escolher</button>
+        </section>
+        <h2>Números disponíveis para escolha</h2>
+        <section id="numbers">
+            <span class="cursor-pointer" data-number="1">1</span>
+            <span class="cursor-pointer" data-number="2">2</span>
+            <span class="cursor-pointer" data-number="3">3</span>
+            <span class="cursor-pointer" data-number="4">4</span>
+            <span class="cursor-pointer" data-number="5">5</span>
+            <span class="cursor-pointer" data-number="6">6</span>
+            <span class="cursor-pointer" data-number="7">7</span>
+            <span class="cursor-pointer" data-number="8">8</span>
+            <span class="cursor-pointer" data-number="9">9</span>
+            <span class="cursor-pointer" data-number="10">10</span>
+            <span class="cursor-pointer" data-number="11">11</span>
+            <span class="cursor-pointer" data-number="12">12</span>
+            <span class="cursor-pointer" data-number="13">13</span>
+            <span class="cursor-pointer" data-number="14">14</span>
+            <span class="cursor-pointer" data-number="15">15</span>
+            <span class="cursor-pointer" data-number="16">16</span>
+            <span class="cursor-pointer" data-number="17">17</span>
+            <span class="cursor-pointer" data-number="18">18</span>
+            <span class="cursor-pointer" data-number="19">19</span>
+            <span class="cursor-pointer" data-number="20">20</span>
+        </section>
+        <div id="insert">
+            <div class="buttons">
+                <button id="btn-sortear" class="btn" disabled>Sortear</button>
+                <button id="btn-clean" class="btn" disabled>Limpar</button>
+            </div>
+            <p id="text"></p>
+        </div>
+    </main>
+</body>
+
+</html>

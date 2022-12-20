@@ -30,7 +30,7 @@ document.getElementById('btn-escolher').addEventListener('click', () => {
     name.value = ''
     number.value = ''
 
-    if (selectNumbers.length === 5) {
+    if (selectNumbers.length === 20) {
         orderNumber()
         disableInput()
         

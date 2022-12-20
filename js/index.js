@@ -30,7 +30,7 @@ document.getElementById('btn-escolher').addEventListener('click', () => {
     name.value = ''
     number.value = ''
 
-    if (selectNumbers.length === 20) {
+    if (selectNumbers.length === 5) {
         orderNumber()
         disableInput()
         
@@ -95,9 +95,11 @@ function clean(element){
     btnClean.disabled = true
 
     document.getElementById('text').innerText = ``
+    document.getElementById('text-number').innerText = ``
 }
 
-function textWinner(name){
+function textWinner(number, name){
+    document.getElementById('text-number').innerText = `Número sorteado é o ${number}.`
     document.getElementById('text').innerText = `Parabéns ${name}, você é o(a) ganhador(a)!! Retire o seu prêmio.`
 }
 
@@ -113,7 +115,7 @@ document.getElementById('btn-sortear').addEventListener('click', () => {
     console.log(numberWin)
     console.log(finalArray.findIndex(indexWinner))
     console.log(finalArray[nameWinner - 1])
-    textWinner(finalArray[nameWinner - 1])
+    textWinner(numberWin, finalArray[nameWinner - 1])
     const btnDraw = document.querySelector('#btn-sortear')
     btnDraw.disabled = true
 })
